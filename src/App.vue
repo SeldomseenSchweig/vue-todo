@@ -13,7 +13,7 @@ const addTodo = () => {
   todos.value.push({
     content: input_content.value.trim(),
     category: input_category.value,
-    createdAt: Date.now(),
+    createdAt: new Date.getTime(),
   });
 };
 
