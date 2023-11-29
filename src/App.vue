@@ -10,6 +10,11 @@ const addTodo = () => {
   if (input_content.value.trim() === "" || input_category === null) {
     return;
   }
+  todos.value.push({
+    content: input_content.value.trim(),
+    category: input_category.value,
+    createdAt: Date.now(),
+  });
 };
 
 const todos_asc = computed(() =>
