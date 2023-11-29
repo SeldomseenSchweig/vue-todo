@@ -13,6 +13,7 @@ const addTodo = () => {
   todos.value.push({
     content: input_content.value.trim(),
     category: input_category.value,
+    done: false,
     createdAt: new Date.getTime(),
   });
 };
@@ -22,6 +23,10 @@ const todos_asc = computed(() =>
     return b.createdAt - a.createdAt;
   })
 );
+
+watch(todos, (newVal) => {
+  localStorage.setItem("todos", JSON.stringify(newVal));
+});
 
 watch(name, (newVal) => {
   localStorage.setItem("name", newVal);
