@@ -48,6 +48,7 @@ onMounted(() => {
 </script>
 <template>
   <main class="app">
+    <title>Vue Todo</title>
     <section class="greeting"></section>
     <section class="create-todo">
       <h2>CREATE TODO</h2>
