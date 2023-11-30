@@ -48,7 +48,7 @@ onMounted(() => {
 </script>
 <template>
   <main class="app">
-    <title>Todo List<</title>
+    <title>Todo List</title>
 
     <section class="greeting">
       <h2 class="title">Todo List</h2>
