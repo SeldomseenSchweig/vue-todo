@@ -48,13 +48,9 @@ onMounted(() => {
 </script>
 <template>
   <main class="app">
-    <title>Todo List</title>
-
-    <section class="greeting">
-      <h2 class="title">Todo List</h2>
-    </section>
+    <section class="greeting"></section>
     <section class="create-todo">
-      <h3>CREATE TODO</h3>
+      <h2>CREATE TODO</h2>
 
       <form @submit.prevent="addTodo">
         <h4>What is on your todo list?</h4>
