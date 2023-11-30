@@ -48,10 +48,10 @@ onMounted(() => {
 </script>
 <template>
   <main class="app">
+    <title>Todo List<</title>
+
     <section class="greeting">
-      <h2 class="title">
-        What's Up? <input type="text" Placeholder="name here" v-model="name" />
-      </h2>
+      <h2 class="title">Todo List</h2>
     </section>
     <section class="create-todo">
       <h3>CREATE TODO</h3>
